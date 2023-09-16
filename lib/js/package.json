@@ -1,0 +1,15 @@
+{
+  "name": "lib",
+  "type": "module",
+  "description": "JavaScript utilities for web-go.",
+  "scripts": {
+    "build": "bun run lint && bun build src/index.ts --target=browser --outfile=../../public/lib.js",
+    "dev": "bun build src/index.ts --target=browser --outfile=../../public/lib.js --watch",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.2",
+    "typescript": "^5.2.2"
+  },
+  "module": "index.ts"
+}
